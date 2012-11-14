@@ -3,13 +3,13 @@ $:.push File.expand_path("../lib", __FILE__)
 require 'goliath/rack/sprockets/version'
 
 Gem::Specification.new do |s|
-  s.name = 'goliath_rack_sprockets'
-  s.version = Goliath::Rack::Sprockets::VERSION
+  s.name     = 'goliath_rack_sprockets'
+  s.version  = Goliath::Rack::Sprockets::VERSION
   s.platform = Gem::Platform::RUBY
-  s.authors = ['Maarten Hoogendoorn']
-  s.email = ['maarten@moretea.nl']
+  s.authors  = ['Maarten Hoogendoorn']
+  s.email    = ['maarten@moretea.nl']
   s.homepage = 'http://github.com/moretea/goliath_rack_sprockets'
-  s.summary = 'Sprockets middleware for goliath'
+  s.summary  = 'Sprockets middleware for goliath'
   s.description = s.summary
 
   s.required_ruby_version = '>=1.9.2'
