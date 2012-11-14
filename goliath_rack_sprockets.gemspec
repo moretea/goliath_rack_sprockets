@@ -29,6 +29,8 @@ Gem::Specification.new do |s|
   if RUBY_PLATFORM.include?('darwin')
     s.add_development_dependency 'growl', '~> 1.0.3'
     s.add_development_dependency 'rb-fsevent'
+  elsif RUBY_PLATFORM.include?('linux')
+    s.add_development_dependency 'rb-inotify'
   end
 
   ignores = File.readlines(".gitignore").grep(/\S+/).map {|i| i.chomp }
