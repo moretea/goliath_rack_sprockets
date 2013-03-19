@@ -5,12 +5,6 @@
 
 This gem makes it possible to use sprockets with Goliath.
 
-## Installation & Prerequisites
-
-* You should have a Gemfile with Goliath
-* Add <code>goliath_rack_sprockets</code>
-
-
 ## Example usage
 
 ```ruby

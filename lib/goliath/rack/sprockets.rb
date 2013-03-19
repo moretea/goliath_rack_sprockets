@@ -1,10 +1,11 @@
 require 'sprockets'
 require 'goliath/rack/sprockets/version'
+require 'goliath/rack/sprockets/api_extension'
+Goliath::API.send(:include, Goliath::Rack::Sprockets::APIExtension)
 
 module Goliath
   module Rack
     class Sprockets
-
       def initialize(app, options)
         @app     = app
         @options = options

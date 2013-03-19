@@ -1,13 +1,15 @@
 require 'spec_helper'
 require 'goliath/rack/sprockets'
-require 'goliath/goliath'
+require 'goliath/api'
 
 describe Goliath::Rack::Sprockets do
   let(:app) { mock('app').as_null_object }
+
   let(:options) { { 
     root: File.expand_path("../../../fixtures", __FILE__),
     asset_paths: ["assets/javascripts", "assets/stylesheets"] 
   } }
+
   let(:request_path) { "/assets/javascripts/some.js" }
 
   let(:env) do
